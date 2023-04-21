@@ -2,10 +2,11 @@
   "name": "aind9228",
   "version": "1.0.0",
   "description": "my first ver and first time using npm",
-  "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html"
   },
   "author": "Angel",
   "license": "ISC",
